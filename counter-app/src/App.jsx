@@ -6,10 +6,12 @@ function App() {
   let [counter, setCounter]=useState(15);
   // let counter=50;
   const addVal=()=>{
+    if(counter<30)
     setCounter(counter+1)
     console.log('clicked ',{counter})
   }
   const remVal=()=>{
+    if(counter>0)
     setCounter(counter-1)
     console.log('clicked ',{counter})
   }
